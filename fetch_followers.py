@@ -3,7 +3,7 @@ import json
 
 HANDLE = 'romerogames.bsky.social'  # replace with your handle
 
-url = f"https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=romerogames"
+url = f"https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={HANDLE}"
 response = requests.get(url)
 followers = response.json().get("followersCount", 0)
 
