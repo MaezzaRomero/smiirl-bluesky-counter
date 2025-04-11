@@ -3,7 +3,6 @@ name: Update Smiirl Counter JSON
 on:
   schedule:
     - cron: "*/15 * * * *"  # every 15 minutes
-  workflow_dispatch:        # Allows manual trigger via the GitHub UI
 
 jobs:
   update:
